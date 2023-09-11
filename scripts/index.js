@@ -1,68 +1,64 @@
-jQuery(document).ready(function ($) {
-    // This controls the button for the c note.
-    // This variable calls the cNote audio element in the HTML.
-    var cNote = document.getElementById('cAudio');
+document.addEventListener('DOMContentLoaded', function (){
+console.log ("Everything is loaded");
 
-    // This turns our <div id= "c"> into a button that plays our audio file when the box is pressed.
-    $('#c').mousedown(function () {
-        // This is a property that scrubs the audio file back to its start.
-        cNote.currentTime = 0;
+    const cAudio = document.getElementById ('cAudio');
+    const cNoteButton = document.getElementById('c'); 
 
-        // This plays the audio file.
-        cNote.play();
+    cNoteButton.addEventListener('click',()=> {
+        cAudio.currentTime = 0;
+        cAudio.play();
     });
 
-    // This controls the button for the d note.
-
-    var dNote = document.getElementById('dAudio');
-
-    $('#d').mousedown(function () {
-        dNote.currentTime = 0;
-        dNote.play();
+    const dAudio = document.getElementById ('dAudio');
+    const dNoteButton = document.getElementById('d'); 
+    
+    dNoteButton.addEventListener('click',()=> {
+        dAudio.currentTime = 0;
+        dAudio.play();     
     });
 
-    // This controls the button for the e note.
-
-    var eNote = document.getElementById('eAudio');
-
-    $('#e').mousedown(function () {
-        eNote.currentTime = 0;
-        eNote.play();
+    const eAudio = document.getElementById ('eAudio');
+    const eNoteButton = document.getElementById('e'); 
+    
+    eNoteButton.addEventListener('click',()=> {
+        eAudio.currentTime = 0;
+        eAudio.play();      
     });
 
-    // This controls the button for the f note.
-
-    var fNote = document.getElementById('fAudio');
-
-    $('#f').mousedown(function () {
-        fNote.currentTime = 0;
-        fNote.play();
+    const fAudio = document.getElementById ('fAudio');
+    const fNoteButton = document.getElementById('f'); 
+    
+    fNoteButton.addEventListener('click',()=> {
+        fAudio.currentTime = 0;
+        fAudio.play();    
     });
 
-    // This controls the button for the g note.
-
-    var gNote = document.getElementById('gAudio');
-
-    $('#g').mousedown(function () {
-        gNote.currentTime = 0;
-        gNote.play();
+    const gAudio = document.getElementById ('gAudio');
+    const gNoteButton = document.getElementById('g'); 
+    
+    gNoteButton.addEventListener('click',()=> {
+        gAudio.currentTime = 0;
+        gAudio.play();         
     });
 
-    // This controls the button for the a note.
+    const aAudio = document.getElementById ('aAudio');
+    const aNoteButton = document.getElementById('a'); 
+    
+    aNoteButton.addEventListener('click',()=> {
+        aAudio.currentTime = 0;
+        aAudio.play();       
+    });  
 
-    var aNote = document.getElementById('aAudio');
+const bAudio = document.getElementById ('bAudio');
+const bNoteButton = document.getElementById('b'); 
 
-    $('#a').mousedown(function () {
-        aNote.currentTime = 0;
-        aNote.play();
-    });
+    bNoteButton.addEventListener('click',()=> {
+        bAudio.currentTime = 0;
+        bAudio.play();       
+    });      
 
-    // This controls the button for the b note.
-
-    var bNote = document.getElementById('bAudio');
-
-    $('#b').mousedown(function () {
-        bNote.currentTime = 0;
-        bNote.play();
-    });
 });
+
+
+      
+
